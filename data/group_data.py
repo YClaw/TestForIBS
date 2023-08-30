@@ -1,0 +1,3 @@
+class GroupData:
+
+    response = None
