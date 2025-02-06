@@ -23,6 +23,7 @@ class TestUsers(ApiBase):
     def test_get_single_user(self, user_id):
         # Получаем пользователя по id
         result = self.manager.api_users.get_single_user(user_id)
+        # 12345
         # Проверяем id пользователя и статус ответа
         assert result['data']['id'] == user_id
         assert self.manager.group_data.response.status_code == 200
